@@ -1,5 +1,5 @@
 import React from 'react';
-import {useNavigate} from "react-router-dom";
+import {Link, useNavigate} from "react-router-dom";
 
 function LoginPage (props) {
 
@@ -27,6 +27,7 @@ function LoginPage (props) {
                             </div>
                             <div>
                                 <a href="/dashboard" class="forgot-password">forgot password</a>
+                                <Link to="/dashboard">i am a link hello</Link>
                             </div>
                             <div>
                                 <button type="submit">sign in</button>
