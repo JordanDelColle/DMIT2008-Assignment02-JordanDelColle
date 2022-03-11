@@ -16,7 +16,7 @@ function SideBar (props){
         <AppBarStyles>
             <AppBarItems>
                 <AppBarItemGroup>
-                    <MyLink href="/dashboard">
+                    <MyLink href="/">
                         <AppBarItem className='myAppBarItem'>
                             <IconButton>
                                 <MdOutlineDashboard size="1.25rem" color="black"/>
