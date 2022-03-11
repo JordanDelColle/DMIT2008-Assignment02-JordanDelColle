@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 function PageNotFound (props) {
     return (
@@ -12,7 +13,7 @@ function PageNotFound (props) {
             <nav>
                 <ul>
                     <li>
-                        <a href="/dashboard" className="return-link">Click here to return to the dashboard</a>
+                        <Link to="/dashboard" class="return-link">Click here to return to the dashboard</Link>
                     </li>
                 </ul>
             </nav>

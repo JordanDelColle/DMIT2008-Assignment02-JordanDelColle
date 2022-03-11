@@ -409,6 +409,10 @@ const GlobalStyles = createGlobalStyle`
 .forgot-password{
   color: #F47373;
 }
+.forgot-password:hover {
+  color: white;
+  text-decoration: none;
+}
 .error-page {
   background-color: #F47373;
   height: 100vh;
@@ -429,6 +433,10 @@ const GlobalStyles = createGlobalStyle`
   font-size: 16px;
   color: #076AE1;
   text-transform: lowercase;
+}
+.return-link:hover {
+  color: white;
+  text-decoration: none;
 }
 .flex {
   display: flex;
