@@ -26,8 +26,7 @@ function LoginPage (props) {
                                 <input type="password" required/>
                             </div>
                             <div>
-                                <a href="/dashboard" class="forgot-password">forgot password</a>
-                                <Link to="/dashboard">i am a link hello</Link>
+                                <Link to="/dashboard" class="forgot-password">forgot password</Link>
                             </div>
                             <div>
                                 <button type="submit">sign in</button>
