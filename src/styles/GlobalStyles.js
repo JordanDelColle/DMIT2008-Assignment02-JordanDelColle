@@ -1,4 +1,4 @@
-import { createGlobalStyle } from 'styled-components';
+import {createGlobalStyle} from 'styled-components';
 
 const GlobalStyles = createGlobalStyle`
 /*!
@@ -367,10 +367,9 @@ const GlobalStyles = createGlobalStyle`
   height: 80vh;
   width: 50vw;
   background-color: #076AE1;
-  /* background-color: #0B8C8C; */
   align-items: center;
 }
-.ggg {
+.login-form {
   margin-left: auto;
   margin-right: auto;
 }
@@ -381,29 +380,16 @@ const GlobalStyles = createGlobalStyle`
   align-items: center;
 }
 .login-div {
-  /* display: flex; */
-  /* align-content: center; */
-  /* justify-content: right; */
-  /* margin-left: auto; */
-  /* margin-right: auto; */
   text-align: center;
 }
 .jgs-logo-main {
   height: 75vh;
-  /* text-align: center; */
-  /* margin-left: auto;
-  margin-right: auto; */
   display: block;
   margin-left: auto;
   margin-right: auto;
 }
 .jgs-logo-small {
   height: 50vh;
-  /* text-align: center; */
-  /* align-self: center; */
-  /* align-items: center; */
-  /* margin-left: auto;
-  margin-right: auto; */
 }
 .top-div {
   height: 10vh;
@@ -444,7 +430,7 @@ const GlobalStyles = createGlobalStyle`
   color: #076AE1;
   text-transform: lowercase;
 }
-.pls {
+.flex {
   display: flex;
 }
 `

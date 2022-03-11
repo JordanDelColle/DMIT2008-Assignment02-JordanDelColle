@@ -8,7 +8,6 @@ import{MdOutlineLocalShipping, MdOutlinePrivacyTip, MdOutlineDashboard, MdOutlin
 import{VscListSelection, VscListOrdered} from 'react-icons/vsc'
 import{SiBigbluebutton} from 'react-icons/si'
 
-
 import {AppBarStyles, AppBarItems, AppBarItem, AppBarItemGroup, MyLink, SignOutText} from './styles'
 import {IconButton} from './../../ui/buttons'
 
@@ -129,7 +128,6 @@ function SideBar (props){
                         </AppBarItem>
                     </MyLink>
                 </AppBarItemGroup>
-
             </AppBarItems>
             <SignOutText href="/">Sign out</SignOutText>
         </AppBarStyles>

@@ -14,6 +14,5 @@ const IconButton = styled.button`
     border: none;
     background-color: transparent;
     outline: none;
-  
 `;
 export {Button, IconButton}
