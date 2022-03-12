@@ -29,6 +29,9 @@ function LoginPage (props) {
                                 <Link to="/dashboard" class="forgot-password">forgot password</Link>
                             </div>
                             <div>
+                                <Link to="/404" class="forgot-password">view 404 page</Link>
+                            </div>
+                            <div>
                                 <button type="submit">sign in</button>
                             </div> 
                         </div>
