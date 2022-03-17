@@ -11,7 +11,15 @@ import{SiBigbluebutton} from 'react-icons/si'
 import {AppBarStyles, AppBarItems, AppBarItem, AppBarItemGroup, MyLink, SignOutText} from './styles'
 import {IconButton} from './../../ui/buttons'
 
+import {Button} from './../../ui/buttons'
+
+import {signOut, SignOut} from 'firebase/auth'
+import {auth} from './../../libs/firebase'
+
 function SideBar (props){
+    function onLogoutRequest(e) {
+        signOut(auth)
+    }
     return(
         <AppBarStyles>
             <AppBarItems>
@@ -129,7 +137,8 @@ function SideBar (props){
                     </MyLink>
                 </AppBarItemGroup>
             </AppBarItems>
-            <SignOutText href="/">Sign out</SignOutText>
+            {/* <SignOutText href="/">Sign out</SignOutText> */}
+            <Button onClick={onLogoutRequest}>sign out</Button>
         </AppBarStyles>
     )
 }

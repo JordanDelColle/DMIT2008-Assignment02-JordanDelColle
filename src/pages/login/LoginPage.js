@@ -1,16 +1,51 @@
-import React from 'react';
+import React, {useState} from 'react';
 import {Link, useNavigate} from "react-router-dom";
+import {signInWithEmailAndPassword} from 'firebase/auth'
+import {auth} from './../../libs/firebase'
+
+import {ToastContainer, toast} from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
 
 function LoginPage (props) {
+
+    const [email, setEmail] = useState('')
+    const [password, setPassword] = useState('')
 
     let navigation = useNavigate()
     function onHandleSubmit(e){
         e.preventDefault();
-        navigation('/dashboard')
+        console.log(email)
+        console.log(password)
+        signInWithEmailAndPassword(auth, email, password)
+        .then(userCredential=>{
+            navigation('/dashboard')
+        })
+        .catch(error=>{
+            if (error.code == "auth/invalid-email")
+            {
+                notify("yo")
+            }
+            notify(error)
+        })
     }
+
+    const notify = (error) => toast.error(error.code,{
+        position: "top-center",
+        autoClose: 3000,
+        hideProgressBar: false,
+        closeOnClick: true,
+        pauseOnHover: true,
+        draggable: true,
+        progress: undefined,
+        // icon: <BiMessageSquareError/>
+  
+    });
+
+
 
     return (
         <>
+        <ToastContainer/>
         <form onSubmit={onHandleSubmit}>
             <div className='top-div'></div>
             <div className='primary-div'>
@@ -20,10 +55,12 @@ function LoginPage (props) {
 
                         <div className='login-div'>
                             <div>
-                                <input type="text" required/>
+                                {/* <label>Email</label> */}
+                                <input type="text" placeholder='email@address.com' required onChange={(e)=> setEmail(e.target.value)}/>
                             </div>
                             <div>
-                                <input type="password" required/>
+                                {/* <label>Password</label> */}
+                                <input type="password" placeholder='password' required onChange={(e)=> setPassword(e.target.value)}/>
                             </div>
                             <div>
                                 <Link to="/dashboard" class="forgot-password">forgot password</Link>
