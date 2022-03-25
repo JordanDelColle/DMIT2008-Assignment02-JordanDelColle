@@ -14,4 +14,14 @@ const IconButton = styled.button`
     background-color: transparent;
     outline: none;
 `;
-export {Button, IconButton}
+
+const SignInButton = styled.button`
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    border: none;
+    background-color: black;
+    color: white;
+    outline: none;
+    padding: 0.5rem 1rem;
+`;
+
+export {Button, IconButton, SignInButton}

@@ -5,7 +5,7 @@ const SideBarStyles = styled.nav`
     border-top: 0;
     width: 20vw;
     background-color: #F47373;
-.signOutButton:hover {
+.sign-out-button:hover {
     background-color: #076AE1;
     color: #F47373;
 }
@@ -13,14 +13,14 @@ const SideBarStyles = styled.nav`
 
 const ProductOptionsStyles = styled.div`
     height: 100%;
-.proLink {
+.protected-link {
     color: white;
     font-size: 0.75em;
     text-transform: uppercase;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     text-decoration: none;
 }
-.myAppBarItem:hover {
+.app-bar-item:hover {
     background-color: #076AE1;
     color: black;
 }

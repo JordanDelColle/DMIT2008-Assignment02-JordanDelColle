@@ -17,7 +17,7 @@ function PageNotFound (props) {
     })
     return (
         <>
-        <div class="error-page">
+        <div className="error-page">
             <header>
                 <h1 className="whoops">Whoops!</h1>
             </header>
@@ -27,7 +27,7 @@ function PageNotFound (props) {
                 <ul>
                     <li>
                         {
-                            isUser? <Link to="/dashboard" class="return-link">Click here to return to the dashboard</Link> : <Link to="/" class="return-link">Click here to return home</Link>
+                            isUser? <Link to="/dashboard" className="return-link">Click here to return to the dashboard</Link> : <Link to="/" className="return-link">Click here to return home</Link>
                         }
                     </li>
                 </ul>

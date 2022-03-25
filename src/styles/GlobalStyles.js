@@ -407,11 +407,19 @@ const GlobalStyles = createGlobalStyle`
   align-items: center;
 }
 .forgot-password{
-  color: #F47373;
+  color: white;
 }
 .forgot-password:hover {
-  color: white;
+  color: #F47373;
   text-decoration: none;
+}
+
+.sign-in-button:hover {
+  color: black;
+  background-color: white;
+}
+.password-div {
+  margin: 1rem;
 }
 .error-page {
   background-color: #F47373;

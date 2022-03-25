@@ -1,11 +1,14 @@
 import React, {useState} from 'react';
 import {Link, useNavigate} from "react-router-dom";
-import {signInWithEmailAndPassword} from 'firebase/auth'
-import {auth} from './../../libs/firebase'
 
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import {signInWithEmailAndPassword} from 'firebase/auth'
+
+import {SignInButton} from '../../ui/buttons';
+
+import {auth} from './../../libs/firebase'
 import JGSLogo from './../../assets/images/jgs-logo-blue.jpeg'
 import JGSLogoAlt from './../../assets/images/jgs-logo-alt.png'
 
@@ -24,10 +27,6 @@ function LoginPage (props) {
             navigation('/dashboard')
         })
         .catch(error=>{
-            if (error.code == "auth/invalid-email")
-            {
-                notify("yo")
-            }
             notify(error)
         })
     }
@@ -40,10 +39,7 @@ function LoginPage (props) {
         pauseOnHover: true,
         draggable: true,
         progress: undefined,
-        // icon: <BiMessageSquareError/>
-  
     });
-
 
 
     return (
@@ -58,18 +54,16 @@ function LoginPage (props) {
 
                         <div className='login-div'>
                             <div>
-                                {/* <label>Email</label> */}
                                 <input type="text" placeholder='email@address.com' required onChange={(e)=> setEmail(e.target.value)}/>
                             </div>
                             <div>
-                                {/* <label>Password</label> */}
                                 <input type="password" placeholder='password' required onChange={(e)=> setPassword(e.target.value)}/>
                             </div>
-                            <div>
-                                <Link to="/" class="forgot-password">forgot password</Link>
+                            <div className='password-div'>
+                                <Link to="/" className="forgot-password">forgot password</Link>
                             </div>
                             <div>
-                                <button type="submit">sign in</button>
+                                <SignInButton className="sign-in-button" type="submit">sign in</SignInButton>
                             </div> 
                         </div>
                     </div>

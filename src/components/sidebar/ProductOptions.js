@@ -26,8 +26,8 @@ function ProductOptions (props){
         <ProductOptionsStyles>
         <AppBarItems>
                 <AppBarItemGroup>
-                    <Link to="/dashboard" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="/dashboard" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <MdOutlineDashboard size="1.25rem" color="black"/>
                             </IconButton>
@@ -38,24 +38,24 @@ function ProductOptions (props){
             </AppBarItems>
             <AppBarItems>
                 <AppBarItemGroup>
-                    <Link to="/dashboard" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="/dashboard" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <BsCart3 size="1.25rem" color="black"/>
                             </IconButton>
                             Cart
                         </AppBarItem>
                     </Link>
-                    <Link to="/dashboard" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="/dashboard" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <BiShoppingBag size="1.25rem" color="black"/>
                             </IconButton>
                             Orders
                         </AppBarItem>
                     </Link>
-                    <Link to="/dashboard" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="/dashboard" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <IoSettingsOutline size="1.25rem" color="black"/>
                             </IconButton>
@@ -66,48 +66,48 @@ function ProductOptions (props){
             </AppBarItems>
             <AppBarItems>
                 <AppBarItemGroup>
-                    <Link to="/dashboard" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="/dashboard" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <MdOutlineMiscellaneousServices size="1.25rem" color="black"/>
                             </IconButton>
                             All products
                         </AppBarItem>
                     </Link>
-                    <Link to="add" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="add" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <IoMdAddCircleOutline size="1.25rem" color="black"/>
                             </IconButton>
                             Add product
                         </AppBarItem>
                     </Link>
-                    <Link to="edit" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="edit" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <AiFillEdit size="1.25rem" color="black"/>
                             </IconButton>
                             Edit product
                         </AppBarItem>
                     </Link>
-                    <Link to="/dashboard" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="/dashboard" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <FcDvdLogo size="1.25rem"/>
                             </IconButton>
                             DVD
                         </AppBarItem>
                     </Link>
-                    <Link to="/dashboard" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="/dashboard" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <SiBigbluebutton size="1.25rem" color="#076AE1"/>
                             </IconButton>
                             blu-ray
                         </AppBarItem>
                     </Link>
-                    <Link to="/dashboard" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="/dashboard" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <VscListOrdered size="1.25rem" color="black"/>
                             </IconButton>
@@ -118,16 +118,16 @@ function ProductOptions (props){
             </AppBarItems>
             <AppBarItems>
                 <AppBarItemGroup>
-                    <Link to="/dashboard" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="/dashboard" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <MdOutlineLocalShipping size="1.25rem" color="black"/>
                             </IconButton>
                             Shipping info
                         </AppBarItem>
                     </Link>
-                    <Link to="/dashboard" className='proLink'>
-                        <AppBarItem className='myAppBarItem'>
+                    <Link to="/dashboard" className='protected-link'>
+                        <AppBarItem className='app-bar-item'>
                             <IconButton>
                                 <MdOutlinePrivacyTip size="1.25rem" color="black"/>
                             </IconButton>
@@ -136,7 +136,7 @@ function ProductOptions (props){
                     </Link>
                 </AppBarItemGroup>
             </AppBarItems>
-            <Button onClick={onLogoutRequest} className="signOutButton">sign out</Button>
+            <Button onClick={onLogoutRequest} className="sign-out-button">sign out</Button>
         </ProductOptionsStyles>
         </>
     )
