@@ -26,12 +26,10 @@ function ProductDataEntryForm ({children, handleProductName, handleProductPrice,
             <Input onChange={(e)=>handleProductFormat(e.target.value.trim())} maxLength={10}/>
           </ProductFormat>
           </fieldset>
-
           <ProductDescription>
             <Label>Description</Label>
             <TextArea onChange={(e)=>handleProductDescription(e.target.value.trim())} maxLength={180} rows={6}/>
           </ProductDescription>
-
         </ProductDataEntryFormStyles>
   )
 }

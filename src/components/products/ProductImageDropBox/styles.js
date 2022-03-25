@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-
-
 const getColor = (props) => {
     if (props.isDragAccept) {
         return '#00e676';
@@ -21,9 +19,7 @@ const getColor = (props) => {
     flex-direction: column;
     align-items: center;
     padding: 2.5rem 1rem;
-    /* background-color:#F47373; */
     background-color: #eff6ff;
-    /* background-color: #076AE1; */
     font-family: Verdana, Geneva, Tahoma, sans-serif;
     color: black;
     outline: none;
@@ -32,14 +28,10 @@ const getColor = (props) => {
     margin-bottom: 1rem;
     border: 2px solid #eff6ff;
     :hover{
-      /* border-color: cornflowerblue; */
       border: 2px solid black;
-      /* background-color: #eff6ff; */
       background-color:#F47373;
-      /* background-color: #076AE1; */
       cursor: pointer;
     }
   `;
  
-
 export {ProductImageDropBoxStyles}

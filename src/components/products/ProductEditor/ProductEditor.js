@@ -16,12 +16,12 @@ function ProductEditor ({children, productName, productPrice, pP, productDescrip
             handleProductFormat={handleProductFormat}
           />
           <ProductPreview 
-          productName={productName}
-          productPrice={productPrice}
-          pP={pP}
-          productDescription={productDescription}
-          productImage={productImage}
-          productFormat={productFormat}
+            productName={productName}
+            productPrice={productPrice}
+            pP={pP}
+            productDescription={productDescription}
+            productImage={productImage}
+            productFormat={productFormat}
           />
 
         </ProductEditorStyles>

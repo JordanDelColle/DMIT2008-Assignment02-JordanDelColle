@@ -1,6 +1,5 @@
 import styled from 'styled-components';
 
- 
 const TextArea = styled.textarea`
     width: ${props => props.width || "100%"};
     border:${props => props.border || "none"};;
@@ -9,7 +8,6 @@ const TextArea = styled.textarea`
     font-size: ${props => props.fs || "1.125rem"};;
     padding: ${props => props.padding || "0.35rem 0.5rem"};
     background-color: ${props => props.bgc || "#ffffff"};
-;
 
     ::placeholder{
         font-size: 14px;
@@ -20,7 +18,4 @@ const TextArea = styled.textarea`
     }
 `;
 
- 
-
-export{  TextArea } ;
- 
+export{TextArea};

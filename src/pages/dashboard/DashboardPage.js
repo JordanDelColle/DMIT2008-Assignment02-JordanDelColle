@@ -1,11 +1,11 @@
 import React, {useState} from 'react';
+import {useNavigate, Outlet} from 'react-router-dom';
+
+import {onAuthStateChanged} from 'firebase/auth';
+
 import {AppBar} from '../../components/appbar';
 import {SideBar} from '../../components/sidebar';
-import {Panels} from '../../components/panels'
-
-import {useNavigate, Outlet} from 'react-router-dom';
 import {auth} from './../../libs/firebase';
-import {onAuthStateChanged} from 'firebase/auth';
 
 function DashboardPage (props) {
     const [isUser, setIsUser] = useState(false)

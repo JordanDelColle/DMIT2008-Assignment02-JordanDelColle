@@ -10,7 +10,6 @@ function EditProductPanel (title, ...props){
             </PanelHeader>
             <PanelBody></PanelBody>
         </PanelsStyles>
-
     )
 }
 

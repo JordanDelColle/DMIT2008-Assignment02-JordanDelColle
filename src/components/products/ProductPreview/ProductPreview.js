@@ -2,7 +2,6 @@ import React from 'react';
 
 import {ProductPreviewStyles, ProductImage, ProductName, ProductPrice, ProductDescription, ProductFormat} from './styles'
 
-
 function ProductPreview ({children, productName, productPrice, pP, productDescription, productImage, productFormat, ...props})  {
   return (
         <ProductPreviewStyles  {...props}>
@@ -13,7 +12,6 @@ function ProductPreview ({children, productName, productPrice, pP, productDescri
           <ProductPrice>${pP}</ProductPrice>
           <ProductFormat>{productFormat}</ProductFormat>
           <ProductDescription>{productDescription}</ProductDescription>
-
         </ProductPreviewStyles>
   )
 }

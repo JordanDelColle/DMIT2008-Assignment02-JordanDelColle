@@ -30,4 +30,4 @@ function useNumberFormat() {
   return formatter;
 }
 
-export { useNumberFormat };
+export {useNumberFormat};

@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-
-
 const ProductPreviewStyles  = styled.div`
 font-family: Verdana, Geneva, Tahoma, sans-serif;
 text-transform: lowercase;
@@ -15,7 +13,6 @@ const ProductName = styled.h2`
     color: white;
     word-wrap: break-word;
     hyphens: auto;
-    /* overflow-wrap: break-word; */
     max-width: 15vw;
 `;
 

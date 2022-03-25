@@ -1,22 +1,21 @@
 import React from 'react';
-import { Link } from 'react-router-dom';
+import {Link} from 'react-router-dom';
+
 import {signOut} from 'firebase/auth'
 
 import {auth} from './../../libs/firebase'
-
 import {ProductOptionsStyles, AppBarItems, AppBarItem, AppBarItemGroup} from './styles'
-import {IconButton} from './../../ui/buttons'
-import {Button} from './../../ui/buttons'
+import {Button, IconButton} from './../../ui/buttons'
 
-import{FcDvdLogo} from 'react-icons/fc'
-import{BsCart3} from 'react-icons/bs'
-import{BiShoppingBag} from 'react-icons/bi'
-import{IoSettingsOutline} from 'react-icons/io5'
-import{MdOutlineLocalShipping, MdOutlinePrivacyTip, MdOutlineDashboard, MdOutlineMiscellaneousServices} from 'react-icons/md'
-import{VscListOrdered} from 'react-icons/vsc'
-import{SiBigbluebutton} from 'react-icons/si'
-import {IoMdAddCircleOutline} from 'react-icons/io'
 import {AiFillEdit} from 'react-icons/ai'
+import {BiShoppingBag} from 'react-icons/bi'
+import {BsCart3} from 'react-icons/bs'
+import {FcDvdLogo} from 'react-icons/fc'
+import {IoMdAddCircleOutline} from 'react-icons/io'
+import {IoSettingsOutline} from 'react-icons/io5'
+import {MdOutlineLocalShipping, MdOutlinePrivacyTip, MdOutlineDashboard, MdOutlineMiscellaneousServices} from 'react-icons/md'
+import {SiBigbluebutton} from 'react-icons/si'
+import {VscListOrdered} from 'react-icons/vsc'
 
 function ProductOptions (props){
     function onLogoutRequest(e) {

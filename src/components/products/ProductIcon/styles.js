@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
-
-
 const ProductIconStyles  = styled.div`
       width: 15vw;
       height: 60vh;
       border: 1px black solid;
       padding: 0 1vw;
-      /* padding-bottom: 10vh; */
       
       h3 {
           font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -22,7 +19,6 @@ const ProductIconStyles  = styled.div`
           font-size: 1rem;
           color: white;
           text-transform: uppercase;
-          /* font-weight: bold; */
           padding: 0.5rem 0;
       }
       h4 {
@@ -37,7 +33,6 @@ const ProductIconStyles  = styled.div`
           color: white;
           text-transform: lowercase;
           font-style: italic;
-          
       }
 `;
 
@@ -46,6 +41,5 @@ const ProductIconStylesEmpty  = styled.div`
       height: 50vh;
       padding: 0 1vw;
 `
-
 
 export {ProductIconStyles, ProductIconStylesEmpty}

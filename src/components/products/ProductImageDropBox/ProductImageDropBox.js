@@ -1,7 +1,7 @@
  import React, {useCallback} from 'react'
  import {useDropzone} from 'react-dropzone'
- import {ProductImageDropBoxStyles} from './styles';
 
+ import {ProductImageDropBoxStyles} from './styles';
 
  function ProductImageDropBox  ({setProductImage, ...props}){
     const onDrop = useCallback(acceptedFiles => {
@@ -18,21 +18,14 @@
         isDragReject,
       } = useDropzone({ accept: 'image/jpeg,image/jpg,image/png', maxFiles:1, onDrop });
 
- 
-      
    function workingThing(){
      console.log("look")
    }
-
      return( 
-      
         <ProductImageDropBoxStyles {...getRootProps({isFocused, isDragAccept, isDragReject})}>
           <input {...getInputProps()} onChange={workingThing} />
           <p>Upload Image</p>
         </ProductImageDropBoxStyles>
-       
-       
-      
      )
  }
  

@@ -1,5 +1,5 @@
 import {Route, Routes} from "react-router-dom"
-import { AddProductPanel, EditProductPanel, AllProductsPanel } from "./components/panels";
+import {AllProductsPanel, AddProductPanel, EditProductPanel} from "./components/panels";
 import {LoginPage, DashboardPage, PageNotFound} from './pages';
 
 function App() {

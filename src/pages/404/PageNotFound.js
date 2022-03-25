@@ -2,8 +2,8 @@ import React, {useState} from 'react';
 import {Link} from "react-router-dom";
 
 import {onAuthStateChanged} from 'firebase/auth'
-import {auth} from '../../libs/firebase'
 
+import {auth} from '../../libs/firebase'
 import ErrorImage from './../../assets/images/broken-disc.png'
 
 function PageNotFound (props) {

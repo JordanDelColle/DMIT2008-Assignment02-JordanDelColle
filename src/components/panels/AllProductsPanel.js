@@ -16,7 +16,6 @@ function AllProductsPanel (title, ...props){
                     <ProductIcon/>
                     <ProductIcon/>
                 </IconPanel>
-                
             </PanelBody>
             <PanelBody>
                 <IconPanel>
@@ -25,7 +24,6 @@ function AllProductsPanel (title, ...props){
                     <ProductIcon/>
                     <ProductIcon/>
                 </IconPanel>
-                
             </PanelBody>
             <PanelBody>
                 <IconPanel>
@@ -34,10 +32,8 @@ function AllProductsPanel (title, ...props){
                     <EmptyIcon/>
                     <EmptyIcon/>
                 </IconPanel>
-                
             </PanelBody>
         </PanelsStyles>
-
     )
 }
 

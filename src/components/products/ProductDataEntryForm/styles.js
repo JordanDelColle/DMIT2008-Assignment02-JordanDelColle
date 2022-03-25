@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-
-
 const ProductDataEntryFormStyles  = styled.form`
     width: 40vw;
     font-family: Verdana, Geneva, Tahoma, sans-serif;
@@ -9,26 +7,20 @@ const ProductDataEntryFormStyles  = styled.form`
         border-color: black;
         background-color: #eff6ff;
         outline-color: black;
-
     }
     fieldset {
         display: flex;
         gap: 1rem;
         margin-bottom: 1.5rem;
-
     }
 `;
 
-
 const ProductImage = styled.div`
-/* width: 30vw;
-align-content: center; */
     text-transform: uppercase;
     label {
         color: black;
     }
-    
-`
+`;
 
 const ProductName = styled.div`
     flex: 3;

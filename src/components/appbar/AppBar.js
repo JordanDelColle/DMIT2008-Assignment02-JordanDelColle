@@ -11,21 +11,17 @@ function AppBar (props){
     return(
         <AppBarStyles>
             <AppBarItems>
-            
                 <AppBarItem><img src={JGSLogo} width="50rem" height="50rem"/></AppBarItem>
                 <AppBarItem>
                     <IconButton>
                         <AiOutlineMail size="1.25rem" color="white"/>
                     </IconButton>
-
                     <IconButton>
                         <AiOutlineNotification size="1.25rem" color="white"/>
                     </IconButton>
-
                     <IconButton>
                         <FiUser size="1.5rem" color="white"/>
                     </IconButton>
-
                     <IconButton>
                         <IoSettingsOutline size="1.25rem" color="white"/>
                     </IconButton>

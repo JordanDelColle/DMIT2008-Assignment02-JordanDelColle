@@ -1,4 +1,5 @@
 import React, {useState} from 'react';
+
 import {useNumberFormat} from './../../../../hooks/useNumberFormat'
 import {AddProductStyles} from './styles'
 import {ProductEditor} from './../../../products/ProductEditor'
@@ -45,8 +46,6 @@ function AddProduct ({children, ...props})  {
           setProductImage={setProductImage}
           handleProductFormat={handleProductFormat}
           />
-
-
         </AddProductStyles>
   )
 }

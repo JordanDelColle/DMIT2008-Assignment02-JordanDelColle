@@ -1,6 +1,4 @@
-
 import styled from 'styled-components';
-
 
 const Label = styled.label`
     width: ${props => props.width || "100%"};
@@ -9,4 +7,4 @@ const Label = styled.label`
     padding: ${props => props.padding || '0'};;
     margin: ${props => props.margin || '0'};;
 `;
-export{ Label} ;
+export{Label};

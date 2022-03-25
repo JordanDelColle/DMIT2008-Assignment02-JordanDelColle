@@ -7,7 +7,6 @@ function EditProduct ({children, ...props})  {
         <EditProductStyles  {...props}>
            <h2>EditProduct Component</h2>
            {children}
-
         </EditProductStyles>
   )
 }
