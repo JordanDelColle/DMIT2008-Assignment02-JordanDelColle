@@ -1,6 +1,7 @@
 import React from 'react'
 
 import {PanelsStyles, PanelHeader, PanelBody} from './styles'
+import {EditProduct} from './../products/widgets/EditProduct'
 
 function EditProductPanel (title, ...props){
     return(
@@ -8,7 +9,9 @@ function EditProductPanel (title, ...props){
             <PanelHeader>
                 <h2>Edit Product</h2>
             </PanelHeader>
-            <PanelBody></PanelBody>
+            <PanelBody>
+                <EditProduct/>
+            </PanelBody>
         </PanelsStyles>
     )
 }
