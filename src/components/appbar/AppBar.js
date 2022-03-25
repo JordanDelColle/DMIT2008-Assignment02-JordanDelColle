@@ -6,12 +6,13 @@ import {FiUser} from 'react-icons/fi'
 
 import {AppBarStyles, AppBarItems, AppBarItem} from './styles'
 import {IconButton} from './../../ui/buttons'
+import JGSLogo from './../../assets/images/jgs-logo.png'
 function AppBar (props){
     return(
         <AppBarStyles>
             <AppBarItems>
             
-                <AppBarItem><img src="https://i.imgur.com/ly9uonB.png" width="50rem" height="50rem"/></AppBarItem>
+                <AppBarItem><img src={JGSLogo} width="50rem" height="50rem"/></AppBarItem>
                 <AppBarItem>
                     <IconButton>
                         <AiOutlineMail size="1.25rem" color="white"/>

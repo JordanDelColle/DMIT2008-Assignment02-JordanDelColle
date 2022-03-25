@@ -6,6 +6,9 @@ import {auth} from './../../libs/firebase'
 import {ToastContainer, toast} from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 
+import JGSLogo from './../../assets/images/jgs-logo-blue.jpeg'
+import JGSLogoAlt from './../../assets/images/jgs-logo-alt.png'
+
 function LoginPage (props) {
 
     const [email, setEmail] = useState('')
@@ -51,7 +54,7 @@ function LoginPage (props) {
             <div className='primary-div'>
                 <div className='left-div'>
                     <div className='login-form'>
-                        <img src="https://i.imgur.com/XEDptHR.jpg" className="jgs-logo-small"/>
+                        <img src={JGSLogo} className="jgs-logo-small"/>
 
                         <div className='login-div'>
                             <div>
@@ -63,10 +66,7 @@ function LoginPage (props) {
                                 <input type="password" placeholder='password' required onChange={(e)=> setPassword(e.target.value)}/>
                             </div>
                             <div>
-                                <Link to="/dashboard" class="forgot-password">forgot password</Link>
-                            </div>
-                            <div>
-                                <Link to="/404" class="forgot-password">view 404 page</Link>
+                                <Link to="/" class="forgot-password">forgot password</Link>
                             </div>
                             <div>
                                 <button type="submit">sign in</button>
@@ -77,7 +77,7 @@ function LoginPage (props) {
                 </div>
                 <div className='right-div'>
                     <div className='logo-div'>
-                        <img src="https://i.imgur.com/82CZQ5D.png" className="jgs-logo-main"/>
+                        <img src={JGSLogoAlt} className="jgs-logo-main"/>
                     </div>
                 </div>
             </div>

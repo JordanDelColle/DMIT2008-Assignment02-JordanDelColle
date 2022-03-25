@@ -3,7 +3,7 @@ import {AppBar} from '../../components/appbar';
 import {SideBar} from '../../components/sidebar';
 import {Panels} from '../../components/panels'
 
-import {useNavigate} from 'react-router-dom';
+import {useNavigate, Outlet} from 'react-router-dom';
 import {auth} from './../../libs/firebase';
 import {onAuthStateChanged} from 'firebase/auth';
 
@@ -26,7 +26,7 @@ function DashboardPage (props) {
             <AppBar/>
             <nav className='flex'>
                 <SideBar/>
-                <Panels/>
+                <Outlet/>
             </nav>
             </>
           );
