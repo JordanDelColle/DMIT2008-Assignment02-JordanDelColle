@@ -4,7 +4,7 @@ import {useNumberFormat} from './../../../../hooks/useNumberFormat'
 import {AddProductStyles} from './styles'
 import {ProductEditor} from './../../../products/ProductEditor'
 import ProductPreview from './../../../../assets/images/no-image-selected.png'
-import { EditorFeedback } from './../../../../components/products/EditorFeedback';
+import {EditorFeedback} from './../../../../components/products/EditorFeedback';
 import {useAddNewProduct} from './../../../../hooks/useAddNewProduct'
 
 const defaults = {

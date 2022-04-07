@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ProductIconStyles  = styled.div`
       width: 15vw;
-      height: 60vh;
+      height: 65vh;
       border: 1px black solid;
       padding: 0 1vw;
       

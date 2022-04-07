@@ -25,10 +25,11 @@ const SignInButton = styled.button`
 `;
 
 const SubmitButton = styled(Button)`
-    background-color: ${props => props.bgcolor || '#2563eb'};
-    color: ${props => props.color || '#f8fafc'}; 
+    background-color: ${props => props.bgcolor || '#F47373'};
+    color: ${props => props.color || '#FFF'}; 
     font-weight: ${props => props.fw || '700'}; 
     font-size: ${props => props.fs || '14px'};
+    padding: 1rem 2rem;
 `
 
 export {Button, IconButton, SignInButton, SubmitButton}

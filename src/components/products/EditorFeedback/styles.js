@@ -11,7 +11,7 @@ const EditorFeedbackStyles  = styled.aside`
 const FeedbackMessage = styled.figcaption`
     font-size: 1.75rem;
     font-weight: 600;
-    color: #a3e635;
+    color: Limegreen;
 `
 
 const Feedback = styled.figure`

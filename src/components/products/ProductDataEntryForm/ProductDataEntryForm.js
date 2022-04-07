@@ -31,7 +31,7 @@ function ProductDataEntryForm ({children, handleProductName, handleProductPrice,
             <Label>Description</Label>
             <TextArea onChange={(e)=>handleProductDescription(e.target.value.trim())} maxLength={180} rows={6}/>
           </ProductDescription>
-          <SubmitButton width="100%" padding="0.75rem 0" margin="1.125rem 0 0 0" type="submit">Add Product</SubmitButton>
+          <SubmitButton type="submit">ADD PRODUCT</SubmitButton>
         </ProductDataEntryFormStyles>
   )
 }
