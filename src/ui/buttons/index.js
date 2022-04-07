@@ -24,4 +24,11 @@ const SignInButton = styled.button`
     padding: 0.5rem 1rem;
 `;
 
-export {Button, IconButton, SignInButton}
+const SubmitButton = styled(Button)`
+    background-color: ${props => props.bgcolor || '#2563eb'};
+    color: ${props => props.color || '#f8fafc'}; 
+    font-weight: ${props => props.fw || '700'}; 
+    font-size: ${props => props.fs || '14px'};
+`
+
+export {Button, IconButton, SignInButton, SubmitButton}
