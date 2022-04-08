@@ -12,10 +12,10 @@ function ProductIcon ({children, imageStoragePath, imageUrl, productDescription,
            <h4>Format: {productFormat}</h4>
            <p>{productDescription}</p>
            <Icons>
-            <IconDiv className='aaa'>
+            <IconDiv>
               <BsPencil/>
             </IconDiv>
-            <IconDiv className='bbb'>
+            <IconDiv>
             <BsTrash/>
             </IconDiv>
            </Icons>

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 const ProductIconStyles  = styled.div`
       width: 15vw;
-      height: 65vh;
+      height: 70vh;
       border: 1px black solid;
       padding: 0 1vw;
       
@@ -50,8 +50,6 @@ const IconDiv  = styled.div`
 const Icons = styled.div`
     display: flex;
     justify-content: end;
-    align-content: flex-end;
-    flex-wrap: wrap-reverse;
 `
 
 export {ProductIconStyles, ProductIconStylesEmpty, IconDiv, Icons}
