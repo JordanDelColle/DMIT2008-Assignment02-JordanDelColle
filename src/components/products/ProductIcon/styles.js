@@ -25,7 +25,7 @@ const ProductIconStyles  = styled.div`
           font-size: 0.5rem;
           color: white;
           padding-bottom: 0.5rem;
-
+          text-transform: uppercase;
       }
       p {
           font-family: Verdana, Geneva, Tahoma, sans-serif;

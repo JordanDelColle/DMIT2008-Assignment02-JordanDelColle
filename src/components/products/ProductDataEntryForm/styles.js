@@ -57,4 +57,20 @@ const ProductDescription = styled.div`
     }
 `;
 
-export {ProductDataEntryFormStyles, ProductImage, ProductName, ProductPrice, ProductDescription, ProductFormat}
+const SubmitButton = styled.button`
+    border: none;
+    border-radius: 3px;
+    margin: 4rem;
+    background-color: ${props => props.bgcolor || '#F47373'};
+    color: ${props => props.color || '#FFF'}; 
+    font-weight: ${props => props.fw || '700'}; 
+    font-size: ${props => props.fs || '14px'};
+    padding: 1rem 2rem;
+    text-transform: uppercase;
+    :hover {
+        background-color: #FFF;
+        color: #000;
+    }
+`
+
+export {ProductDataEntryFormStyles, ProductImage, ProductName, ProductPrice, ProductDescription, ProductFormat, SubmitButton}

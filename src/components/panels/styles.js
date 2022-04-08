@@ -26,5 +26,4 @@ const IconPanel = styled.div`
     padding: 5vh 3vw;
 `
 
-
 export {PanelsStyles, PanelHeader, PanelBody, IconPanel} 

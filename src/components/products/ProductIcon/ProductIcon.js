@@ -1,7 +1,6 @@
 import React from 'react';
 
 import {ProductIconStyles} from './styles'
-import DisplayCase from './../../../assets/images/dvd-case.png'
 
 function ProductIcon ({children, imageStoragePath, imageUrl, productDescription, productFormat, productName, productPrice, uid, ...props})  {
   return (

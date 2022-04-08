@@ -1,7 +1,5 @@
 import styled from 'styled-components';
 
-
-
 const EditorFeedbackStyles  = styled.aside`
     width:80%;
     margin: 4rem auto 0;

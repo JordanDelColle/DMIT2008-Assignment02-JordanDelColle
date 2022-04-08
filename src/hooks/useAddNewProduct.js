@@ -28,7 +28,6 @@ function useAddNewProduct() {
         .then(()=>{
             setLoading(false)
         })
-        
     }
 
     return [loading, productLoader]

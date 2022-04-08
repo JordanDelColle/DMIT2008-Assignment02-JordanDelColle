@@ -18,12 +18,12 @@ You will be redirected to an error 404 page if you try to view a page that does 
 
 ## All Products Panel
 
-Displays two and a half rows of inventory.
+Displays all products. Automatically formats rows to appear consistent, even if there is not enough inventory to complete a full row of 4.
 
 ## Add Product Panel
 
-Will allows users to add products.
+Allows users to add products. Product information is updated in real time as the user enters it, but it is not saved until the user hits the submit button.
 
 ## Edit Products Panel
 
-Will allows users to edit products.
+Allows users to add products. Product information is updated in real time as the user enters it, but it is not saved until the user hits the submit button.
