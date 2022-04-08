@@ -42,4 +42,16 @@ const ProductIconStylesEmpty  = styled.div`
       padding: 0 1vw;
 `
 
-export {ProductIconStyles, ProductIconStylesEmpty}
+const IconDiv  = styled.div`
+    color: #F47373;
+    padding-left: 0.5rem;
+`
+
+const Icons = styled.div`
+    display: flex;
+    justify-content: end;
+    align-content: flex-end;
+    flex-wrap: wrap-reverse;
+`
+
+export {ProductIconStyles, ProductIconStylesEmpty, IconDiv, Icons}
